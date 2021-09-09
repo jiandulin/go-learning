@@ -1,0 +1,14 @@
+package main
+
+import(
+    "fmt"
+)
+
+func main(){
+    //%d表示整形数字，%s表示字符串
+    var stockcode = 123
+    var enddate = "2021-09-07"
+    var url = "Code = %d & endDate = %s"
+    var target_url = fmt.Sprintf(url,stockcode,enddate)
+    fmt.Println(target_url)
+}
